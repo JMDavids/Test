@@ -37,7 +37,7 @@ namespace ProductBook
 
             ProductList.Add(product);
 
-            dvgDisplayProduct.Datasource = ProductList;
+            dvgDisplayProduct
         }
     }
 }
