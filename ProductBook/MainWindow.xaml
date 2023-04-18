@@ -1,0 +1,21 @@
+﻿<Window x:Class="ProductBook.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductBook"
+        mc:Ignorable="d"
+        Title="Book" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btnCheckout" Content="Checkout" Click="btnCheckout_Click"  HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Height="56" Width="168" RenderTransformOrigin="0.481,-0.288"/>
+        <Label x:Name="lblproductTitle" Content="Title" HorizontalAlignment="Left" Margin="237,22,0,0" VerticalAlignment="Top" Height="30" Width="79"/>
+        <Label x:Name="lblproductPrice" Content="Price" HorizontalAlignment="Left" Margin="237,156,0,0" VerticalAlignment="Top" Height="30" Width="79"/>
+        <TextBox x:Name="txtproductTitle" HorizontalAlignment="Left" Margin="474,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="242" Height="28"/>
+        <TextBox x:Name="txtproductPrice" HorizontalAlignment="Left" Margin="474,146,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="242" Height="28"/>
+        <Label x:Name="lblPublisher" Content="Publisher" HorizontalAlignment="Left" Margin="237,87,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtproductPublisher" HorizontalAlignment="Left" Margin="474,85,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="242" Height="28"/>
+        <DataGrid x:Name="dvgDisplayProduct" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,296,10,10"/>
+        <Label x:Name="lblProductPriceWithVAT" Content="Price with VAT: " HorizontalAlignment="Left" Margin="575,232,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

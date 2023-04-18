@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProductBook.Book"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductBook"
+        mc:Ignorable="d"
+        Title="Book" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblBookTitle" Content="Book Title" HorizontalAlignment="Left" Margin="234,55,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPublisher" Content="Publisher" HorizontalAlignment="Left" Margin="234,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPrice" Content="Price" HorizontalAlignment="Left" Margin="234,161,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBookTitle" HorizontalAlignment="Left" Margin="511,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.358,0.652"/>
+        <TextBox x:Name="txtBookPublisher" HorizontalAlignment="Left" Margin="511,109,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.358,0.652"/>
+        <TextBox x:Name="txtBookPrice" HorizontalAlignment="Left" Margin="511,161,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.358,0.652"/>
+        <DataGrid x:Name="dataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="10,280,10,0"/>
+        <Button x:Name="btnSubmit" Content="Submit" Click="btnSubmit_Click" HorizontalAlignment="Left" Margin="324,234,0,0" VerticalAlignment="Top" Height="41" Width="133"/>
+
+    </Grid>
+</Window>
